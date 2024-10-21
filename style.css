@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+html{
+    scroll-behavior: smooth; /*Rolagem do menu suave*/
+}
+
+
+
+:root{
+    --cor-white: #fff;
+    --cor-banner: #001542;
+    --cor-botao: #1D52C4;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+
+    background: linear-gradient(45deg, #0009bd, #0044A4, #00BDFF, #009FFD,#0009bd);
+    background-size: 300% 300%;
+    animation: color 5s ease-in-out infinite;
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.banner{
+    width: 80vw;
+    height: 40vw;
+    background-color: #1D52C4;
+    border-radius: 20px 20px 5px 5px;
+    margin-top: 25px;
+
+    background-image: url(imagens/jhonathan.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.nome
+{
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15pt;
+}
+.nome h3{
+    color: #001542;
+    text-align: center;
+}
+
+
+.botao{
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+}
+
+
+    /*background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(172, 0, 0, 0.37);*/
+
+.botao .um{
+    width: 80vw;
+    height: 25vw;
+    
+    background-color: #001c58;
+    border-radius: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.botao .um::before{
+    content: "";
+    position: absolute;
+    width: 90vw;
+    height: 400%;
+    background: linear-gradient(180deg, #0075fc, #fffb00);
+
+    animation: animate 3s linear infinite;
+}
+.botao .um::after{
+    content: "";
+    position: absolute;
+    background-color: #001c58;
+    inset: 5px;
+    border-radius: inherit;
+}
+@keyframes animate {
+    100%{
+        transform:  rotate(360deg);
+    }
+}
+
+
+
+.botao .dois{
+    width: 80vw;
+    height: 25vw;
+    background-color: #001c58;
+    border-radius: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    position: relative;
+    overflow: hidden;
+}
+.botao .dois::before{
+    content: "";
+    position: absolute;
+    width: 90vw;
+    height: 400%;
+    background: linear-gradient(180deg, #0075fc, #fffb00);
+
+    animation: animate 3s linear infinite;
+}
+.botao .dois::after{
+    content: "";
+    position: absolute;
+    background-color: #001c58;
+    inset: 5px;
+    border-radius: inherit;
+}
+
+
+.botao .tres{
+    width: 80vw;
+    height: 25vw;
+    background-color: #001c58;
+    border-radius: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    position: relative;
+    overflow: hidden;
+}
+.botao .tres::before{
+    content: "";
+    position: absolute;
+    width: 90vw;
+    height: 400%;
+    background: linear-gradient(180deg, #0075fc, #fffb00);
+
+    animation: animate 3s linear infinite;
+}
+.botao .tres::after{
+    content: "";
+    position: absolute;
+    background-color: #001c58;
+    inset: 5px;
+    border-radius: inherit;
+}
+
+
+
+
+.botao img{
+    height: 90px;
+    padding: 10px 5px; 
+    z-index: 2;
+}
+
+.botao .texto{
+    padding-right: 50px;
+
+    z-index: 1;
+}
+
+.botao .um img{
+    height: 90px;
+    padding: 10px 5px; 
+    z-index: 2;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.botao .dois img{
+    padding: 10px 5px; 
+    z-index: 2;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.botao .tres img{
+    height: 150px;
+    padding: 10px 5px; 
+
+    z-index: 2;
+}
